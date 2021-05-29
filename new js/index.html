@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="main.css">
+   <title>Document</title>
+</head>
+<body>
+   <!-- header  -->
+   <header id="header">
+      <div class="container">
+         <div class="logo">
+            <h1>logotip</h1>
+         </div>
+         <nav>
+            <li><a href="#">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#services">services</a></li>
+         </nav>
+         <span style="font-size:30px;cursor:pointer" class="navsite" onclick="openNav()">&#9776; </span>
+         <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="#">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#services">services</a></li>
+          </div>
+      </div>
+      
+   </header>
+
+   <!-- sitebar  -->
+
+   <section class="sitebar">
+      <div class="container">
+         <div class="site-bar-text">
+<h1>my name is Jhon Do</h1>
+<h2>I am devoloper</h2>
+<a href="#">About</a>
+         </div>
+      </div>
+   </section>
+   <section class="about" id="about">
+      <div class="container">
+         <img src="rasm/1.jpg" alt="">
+         <div class="about-content">
+         <h1>About US</h1>
+            <p>Lorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis culpa voluptatibus pariatur excepturi hic nesciunt minus voluptate dolor aspernatur quam. Itaque asperiores dignissimos numquam repellat molestiae, explicabo inventore doloremque nulla. dolor sit amet consectetur adipisicing elit. Voluptates doloribus illo, perferendis ea exercitationem odit quam omnis corporis quibusdam, facilis assumenda aspernatur accusamus odio sequi reiciendis dicta fugiat pariatur. Saepe.</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- skills  -->
+
+   <div class="skills">
+      <div class="box">
+         <img src="svg/file-export — копия.svg" alt="">
+         <h3>Lorem, ipsum.</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae repellendus, aliquam nesciunt inventore ducimus eum!</p>
+      </div>
+      <div class="box">
+         <img src="svg/code — копия.svg" alt="">
+         <h3>Lorem, ipsum.</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae repellendus, aliquam nesciunt inventore ducimus eum!</p>
+      </div>
+      <div class="box">
+         <img src="svg/file-code — копия.svg" alt="">
+         <h3>Lorem, ipsum.</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae repellendus, aliquam nesciunt inventore ducimus eum!</p>
+      </div>
+   </div>
+
+   <!-- works  -->
+
+   <section class="works" id="works">
+      <div class="container">
+         <div class="box-1">           
+            <div class="img-box">
+               <img src="rasm/m1.jpg" alt="">
+               <div class="content">
+                  <h3>name</h3>
+                  <br>
+                  <a href="#">View </a>
+               </div>
+            </div>
+            <div class="img-box">
+               <img src="rasm/m1.jpg" alt="">
+               <div class="content">
+                  <h3>name</h3>
+                  <br>
+                  <a href="#">View </a>
+               </div>
+            </div>
+            <div class="img-box">
+               <img src="rasm/m1.jpg" alt="">
+               <div class="content">
+                  <h3>name</h3>
+                  <br>
+                  <a href="#">View </a>
+               </div>
+            </div>
+         </div>    
+      </div>
+      <br>
+      <a href="#">More View</a>
+   </section>
+
+   <section class="services" id="services">
+      <div class="container">
+         <form>
+            <label for="name">Name:
+            </label>
+            <input type="text" placeholder="Name...">
+            <label for="password">Password:
+            </label> 
+             <input type="password" placeholder="password...">
+            <label for="massage">Massage:
+            </label> 
+            <input type="text" placeholder="Massage...">
+        <br><br><a href="#">submit</a>
+         </form>
+      </div>
+   </section>
+
+</body>
+<script>
+   // header    
+
+   window.addEventListener('scroll',function(){
+      header=document.getElementById('header');
+      header.classList.toggle('sticky',window.scrollY > 0);
+   })
+// nav 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+   }
+
+
+
+</script>
+</html>
